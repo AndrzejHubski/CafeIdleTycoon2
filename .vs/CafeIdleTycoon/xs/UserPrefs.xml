@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{A84E4AFA-D00D-D1D4-2C3C-01DA10F4E813}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneLoader.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Cook.cs" Line="64" Column="1" />
+      <File FileName="Assets/Scripts/Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ClientSpawner.cs" Line="60" Column="37" />
+      <File FileName="Assets/Scripts/Client.cs" Line="13" Column="27" />
+      <File FileName="Assets/Scripts/ClientUI.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/ProgressBar.cs" Line="8" Column="29" />
+      <File FileName="Assets/Scripts/MoneyManager.cs" Line="36" Column="30" />
+      <File FileName="Assets/Scripts/MoneyUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InventoryManager.cs" Line="21" Column="6" />
+      <File FileName="Assets/Scripts/InventoryUI.cs" Line="6" Column="19" />
+      <File FileName="Assets/Scripts/IngredientSlotUI.cs" Line="87" Column="10" />
+      <File FileName="Assets/Scripts/DeliveryTimerManager.cs" Line="83" Column="14" />
+      <File FileName="Assets/Scripts/TimerUpdater.cs" Line="6" Column="6" />
+      <File FileName="Assets/ScriptableObjects/UpgradeData.cs" Line="14" Column="41" />
+      <File FileName="Assets/Scripts/UpgradeType.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/UpgradeManager.cs" Line="140" Column="1" />
+      <File FileName="Assets/Scripts/UpgradeButtonUI.cs" Line="55" Column="40" />
+      <File FileName="Assets/Scripts/UpgradeUI.cs" Line="13" Column="1" />
+      <File FileName="Assets/ScriptableObjects/IngredientData.cs" Line="8" Column="25" />
+      <File FileName="Assets/ScriptableObjects/DishData.cs" Line="12" Column="43" />
+      <File FileName="Assets/Scripts/UpgradeSaveData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameSaveData.cs" Line="13" Column="2" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="28" Column="25" />
+      <File FileName="Assets/ScriptableObjects/IngredientDataBase.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/MainMenuUI.cs" Line="55" Column="30" />
+      <File FileName="Assets/Scripts/RandomHead.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MusicManager.cs" Line="33" Column="2" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="10" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CafeIdleTycoon" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="ScriptableObjects" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="SceneLoader.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3ca7144f-070d-4ff1-b31c-4e9ab2762bd7" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

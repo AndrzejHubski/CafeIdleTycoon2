@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0843f58e9425499e8c33c75545b08d7, type: 3}
+  m_Name: GroundBeef
+  m_EditorClassIdentifier: 
+  ingredientName: GroundBeef
+  id: groundBeef
+  icon: {fileID: 21300000, guid: 1b2c53755224c43179891a842a5b5e05, type: 3}
+  modelPrefab: {fileID: 6808599801469802662, guid: 714cbdecdcb0a4645891357863b99738, type: 3}
+  isUnlimited: 0
+  deliveryAmount: 10
+  deliveryCost: 150
+  deliveryCooldown: 40
