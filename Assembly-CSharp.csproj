@@ -60,33 +60,33 @@
     <Analyzer Include="/Users/andrzeihubski/Documents/UnityAll/2022.3.37f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/MusicManager.cs" />
-    <Compile Include="Assets/Scripts/ProgressBar.cs" />
-    <Compile Include="Assets/Scripts/MainMenuUI.cs" />
+    <Compile Include="Assets/Scripts/Managers/UpgradeManager.cs" />
+    <Compile Include="Assets/Scripts/Managers/SceneLoader.cs" />
     <Compile Include="Assets/Scripts/TimerUpdater.cs" />
-    <Compile Include="Assets/Scripts/UpgradeManager.cs" />
+    <Compile Include="Assets/Scripts/Managers/MusicManager.cs" />
+    <Compile Include="Assets/Scripts/Managers/InventoryManager.cs" />
     <Compile Include="Assets/Scripts/ClientSpawner.cs" />
     <Compile Include="Assets/ScriptableObjects/IngredientDataBase.cs" />
-    <Compile Include="Assets/Scripts/UpgradeUI.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/MainMenuUI.cs" />
     <Compile Include="Assets/Scripts/RandomHead.cs" />
     <Compile Include="Assets/Scripts/Client.cs" />
     <Compile Include="Assets/Scripts/Inventory.cs" />
-    <Compile Include="Assets/Scripts/InventoryManager.cs" />
     <Compile Include="Assets/Scripts/UpgradeSaveData.cs" />
     <Compile Include="Assets/Scripts/GameSaveData.cs" />
-    <Compile Include="Assets/Scripts/GameManager.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/UpgradeButtonUI.cs" />
     <Compile Include="Assets/Scripts/Cook.cs" />
-    <Compile Include="Assets/Scripts/IngredientSlotUI.cs" />
-    <Compile Include="Assets/Scripts/MoneyManager.cs" />
-    <Compile Include="Assets/Scripts/SceneLoader.cs" />
+    <Compile Include="Assets/Scripts/Managers/GameManager.cs" />
     <Compile Include="Assets/ScriptableObjects/UpgradeData.cs" />
     <Compile Include="Assets/ScriptableObjects/DishData.cs" />
-    <Compile Include="Assets/Scripts/UpgradeButtonUI.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/ProgressBar.cs" />
+    <Compile Include="Assets/Scripts/Managers/MoneyManager.cs" />
     <Compile Include="Assets/ScriptableObjects/IngredientData.cs" />
-    <Compile Include="Assets/Scripts/InventoryUI.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/InventoryUI.cs" />
     <Compile Include="Assets/Scripts/DeliveryTimerManager.cs" />
-    <Compile Include="Assets/Scripts/ClientUI.cs" />
-    <Compile Include="Assets/Scripts/MoneyUI.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/ClientUI.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/UpgradeUI.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/MoneyUI.cs" />
+    <Compile Include="Assets/Scripts/UI Scripts/IngredientSlotUI.cs" />
     <Compile Include="Assets/Scripts/UpgradeType.cs" />
   </ItemGroup>
   <ItemGroup>

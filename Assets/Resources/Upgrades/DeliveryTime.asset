@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DeliveryTime
   m_EditorClassIdentifier: 
   upgradeName: Delivery Time
-  description: 
+  description: Reduce delivery time
   type: 1
   baseCost: 1
-  currentLevel: 1
+  currentLevel: 0
   costMultiplier: 2
