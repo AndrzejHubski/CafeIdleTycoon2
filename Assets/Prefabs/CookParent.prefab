@@ -534,6 +534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fridge: {fileID: 6965993090489225026}
   stove: {fileID: 7115117749153078660}
+  pan: {fileID: 492248061391398210}
   register: {fileID: 6965993090489225026}
   holdPoint: {fileID: 8540968273130673129}
   speed: 5

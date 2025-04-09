@@ -6,6 +6,7 @@ public class Cook : MonoBehaviour
     [Header("Links")]
     public Transform fridge;
     public Transform stove;
+    public Transform pan;
     public Transform register;
     public Transform holdPoint;
 
@@ -48,7 +49,17 @@ public class Cook : MonoBehaviour
         SpawnCarriedObject(currentDish.rawModelPrefab);
 
         yield return WalkTo(stove.position);
+        if (pan != null)
+        {
+            Vector3 lookDir = (pan.position - transform.position).normalized;
+            lookDir.y = 0f;
 
+            if (lookDir != Vector3.zero)
+            {
+                Quaternion lookRotation = Quaternion.LookRotation(lookDir);
+                transform.rotation = lookRotation;
+            }
+        }
         float adjustedCookTime = currentDish.baseCookTime * UpgradeManager.Instance.GetCookSpeedMultiplier();
         yield return StartCoroutine(ShowProgressBar(adjustedCookTime));
 

@@ -8,13 +8,24 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(DelayedLoad());
+    }
+
+    private IEnumerator DelayedLoad()
+    {
+        yield return new WaitUntil(() =>
+            DeliveryTimerManager.Instance != null &&
+            InventoryManager.Instance != null &&
+            MoneyManager.Instance != null &&
+            IngredientDatabase.Instance != null
+        );
+
         LoadGame();
     }
 
     private void OnApplicationQuit()
     {
         SaveGame();
-        StartCoroutine(DelayedLoad());
     }
 
     public void SaveGame()
@@ -27,12 +38,16 @@ public class GameManager : MonoBehaviour
         };
 
         File.WriteAllText(path, JsonUtility.ToJson(data));
-        Debug.Log("Saved");
+        Debug.Log("Game saved.");
     }
 
     public void LoadGame()
     {
-        if (!File.Exists(path)) return;
+        if (!File.Exists(path))
+        {
+            Debug.Log("No save file found.");
+            return;
+        }
 
         var json = File.ReadAllText(path);
         var data = JsonUtility.FromJson<GameSaveData>(json);
@@ -41,12 +56,6 @@ public class GameManager : MonoBehaviour
         InventoryManager.Instance.LoadInventory(data.inventory);
         DeliveryTimerManager.Instance.LoadCooldowns(data.deliveryCooldowns);
 
-        Debug.Log("Loaded");
-    }
-
-    private IEnumerator DelayedLoad()
-    {
-        yield return new WaitUntil(() => IngredientDatabase.Instance != null);
-        LoadGame();
+        Debug.Log("Game loaded.");
     }
 }
