@@ -3037,6 +3037,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba9a02ebb0bb845a58ff3be3b57b4bfe, type: 3}
   m_PrefabInstance: {fileID: 1402298449}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1096859597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1096859599}
+  - component: {fileID: 1096859598}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1096859598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096859597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beaa1cf9aefbe4357939d1b958d9fca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1096859599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096859597}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.624081, y: 3.7340684, z: 6.8691916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1124112119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3717,7 +3761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b30cc79c80f748378658ba360a0e398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 2098994586}
+  gameManager: {fileID: 1096859598}
 --- !u!4 &1266231019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba9a02ebb0bb845a58ff3be3b57b4bfe, type: 3}
@@ -6775,7 +6819,6 @@ GameObject:
   - component: {fileID: 2098994583}
   - component: {fileID: 2098994584}
   - component: {fileID: 2098994585}
-  - component: {fileID: 2098994586}
   - component: {fileID: 2098994588}
   m_Layer: 0
   m_Name: Manager
@@ -6889,18 +6932,6 @@ MonoBehaviour:
   hireableCooks:
   - {fileID: 1276698930}
   - {fileID: 789178675}
---- !u!114 &2098994586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098994578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beaa1cf9aefbe4357939d1b958d9fca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2098994588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7227,3 +7258,4 @@ SceneRoots:
   - {fileID: 1287521451}
   - {fileID: 540694364}
   - {fileID: 691659013}
+  - {fileID: 1096859599}

@@ -18,5 +18,5 @@ MonoBehaviour:
   modelPrefab: {fileID: 3214593466492448795, guid: f3a9aa13e11f79e4d9574c7b36432f44, type: 3}
   isUnlimited: 0
   deliveryAmount: 10
-  deliveryCost: 50
+  deliveryCost: 10
   deliveryCooldown: 30
