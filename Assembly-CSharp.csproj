@@ -69,8 +69,10 @@
     <Compile Include="Assets/ScriptableObjects/IngredientDataBase.cs" />
     <Compile Include="Assets/Scripts/UI Scripts/MainMenuUI.cs" />
     <Compile Include="Assets/Scripts/RandomHead.cs" />
+    <Compile Include="Assets/Scripts/IngredientDataBaseLoader.cs" />
     <Compile Include="Assets/Scripts/Client.cs" />
     <Compile Include="Assets/Scripts/Inventory.cs" />
+    <Compile Include="Assets/Scripts/LookAtCamera.cs" />
     <Compile Include="Assets/Scripts/UpgradeSaveData.cs" />
     <Compile Include="Assets/Scripts/GameSaveData.cs" />
     <Compile Include="Assets/Scripts/UI Scripts/UpgradeButtonUI.cs" />

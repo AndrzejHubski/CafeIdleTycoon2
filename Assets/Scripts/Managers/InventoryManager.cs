@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -91,11 +92,20 @@ public class InventoryManager : MonoBehaviour
     public void LoadInventory(List<IngredientEntry> list)
     {
         inventory.Clear();
+
+        if (IngredientDatabase.Instance == null)
+        {
+            Debug.LogWarning("IngredientDatabase not initialized yet. Skipping inventory load.");
+            return;
+        }
+
         foreach (var entry in list)
         {
             var ingredient = IngredientDatabase.Instance.GetIngredientById(entry.id);
             if (ingredient != null)
                 inventory[ingredient] = entry.count;
+            else
+                Debug.LogWarning($"Ingredient with ID '{entry.id}' not found in database.");
         }
     }
 
@@ -111,5 +121,11 @@ public class InventoryManager : MonoBehaviour
             });
         }
         return list;
+    }
+
+    public IEnumerator LoadInventoryDelay(List<IngredientEntry> list)
+    {
+        yield return new WaitForEndOfFrame();
+
     }
 }

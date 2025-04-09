@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     private void OnApplicationQuit()
     {
         SaveGame();
+        StartCoroutine(DelayedLoad());
     }
 
     public void SaveGame()
@@ -40,5 +42,11 @@ public class GameManager : MonoBehaviour
         DeliveryTimerManager.Instance.LoadCooldowns(data.deliveryCooldowns);
 
         Debug.Log("Loaded");
+    }
+
+    private IEnumerator DelayedLoad()
+    {
+        yield return new WaitUntil(() => IngredientDatabase.Instance != null);
+        LoadGame();
     }
 }

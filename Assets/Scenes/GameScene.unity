@@ -3583,6 +3583,7 @@ GameObject:
   - component: {fileID: 1260991542}
   - component: {fileID: 1260991541}
   - component: {fileID: 1260991540}
+  - component: {fileID: 1260991543}
   m_Layer: 5
   m_Name: EscButton
   m_TagString: Untagged
@@ -3654,7 +3655,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2098994587}
+      - m_Target: {fileID: 1260991543}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadMainMenu
         m_Mode: 1
@@ -3704,6 +3705,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260991538}
   m_CullTransparentMesh: 1
+--- !u!114 &1260991543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260991538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b30cc79c80f748378658ba360a0e398, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 2098994586}
 --- !u!4 &1266231019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba9a02ebb0bb845a58ff3be3b57b4bfe, type: 3}
@@ -6762,7 +6776,7 @@ GameObject:
   - component: {fileID: 2098994584}
   - component: {fileID: 2098994585}
   - component: {fileID: 2098994586}
-  - component: {fileID: 2098994587}
+  - component: {fileID: 2098994588}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -6887,7 +6901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beaa1cf9aefbe4357939d1b958d9fca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2098994587
+--- !u!114 &2098994588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6896,10 +6910,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2098994578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b30cc79c80f748378658ba360a0e398, type: 3}
+  m_Script: {fileID: 11500000, guid: 9856b18ecba534e4e83265ab2707bed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 2098994586}
+  database: {fileID: 11400000, guid: 8d4d119d395e14b878dddcb4d54d5252, type: 2}
 --- !u!4 &2100519094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba9a02ebb0bb845a58ff3be3b57b4bfe, type: 3}
